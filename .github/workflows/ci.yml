@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo 'ENV=$APP_ENV ; token len =${DOCKER_TOKEN}'
+      - run: echo "ENV=$APP_ENV ; token len =${DOCKER_TOKEN}"
         env:
           APP_ENV: ${{ vars.APP_ENV }}
           DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
